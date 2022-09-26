@@ -1,0 +1,20 @@
+[package]
+name = "graphite_build_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.57"
+bevy_ecs = "0.7.0"
+rand = "0.8.5"
+
+graphite_server = { path = "../Graphite/crates/graphite_server" }
+graphite_net = { path = "../Graphite/crates/graphite_net" }
+graphite_concierge = { path = "../Graphite/crates/graphite_concierge" }
+graphite_command = { path = "../Graphite/crates/graphite_command" }
+graphite_mc_protocol = { path = "../Graphite/crates/graphite_mc_protocol" }
+graphite_mc_constants = { path = "../Graphite/crates/graphite_mc_constants" }
+graphite_magma = { path = "../Graphite/crates/graphite_magma" }
+graphite_sticky = { path = "../Graphite/crates/graphite_sticky" }
